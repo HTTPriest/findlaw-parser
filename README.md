@@ -5,3 +5,4 @@ So scrapy saves this block as dictionary. Then post_process.py unpack dictionary
 
 
 Use main.sh to start parsing.
+Final result is available in attorneys.csv file.
