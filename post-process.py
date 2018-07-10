@@ -17,8 +17,8 @@ def grabkeys(line):
 
 
 for item in table['officeInfo']:
-    #print(item, '~~~~ at position ', item.index)
-    grabkeys(unique)
+    print(item, '~~~~ at position ', item.index)
+    grabkeys(item)
 
 print(unique)
 
@@ -40,4 +40,4 @@ d = pd.DataFrame(c, columns=['link', 'name', 'streetAddress', 'addressLocality',
                  'Practice Areas', 'Year Joined Firm', 'Languages', 'Litigation',
                  'Representative Clients', 'Representative Cases'])
 
-d.to_csv('attorneys.csv')
+d.to_csv('attorneys.tsv', sep="\t")
